@@ -1,0 +1,33 @@
+@media screen and (max-width: 498px) {
+  .signbg {
+    background-image: url('../../../images/tree-wallpaper-320x480.webp') !important;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+  .signbg {
+    background-image: url('../../../images/tree-wallpaper-640x480.webp') !important;
+  }
+}
+
+.signbg {
+  background-image: url('../../../images/tree-1366x768.webp');
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+
+mat-card {
+  display: inline-flex;
+  width:40%;
+  margin-top:3rem;
+  margin-left:2rem;
+}
+
+form {
+  width:100%
+}
+
+mat-form-field {
+  width: 100%;
+}

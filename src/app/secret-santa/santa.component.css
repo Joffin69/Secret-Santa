@@ -1,0 +1,220 @@
+@media screen and (max-width: 500px) {
+  mat-card {
+    width: 80% !important;
+    margin-right: 1rem !important;
+  }
+}
+
+.bg {
+  background-image: url("../../images/santa.webp");
+  height: 100%;
+  max-width:100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fontclass {
+  font-family: 'Solway', serif !important;
+}
+
+mat-card {
+  display: inline-block;
+  margin-top:3rem;
+  margin-left:2rem;
+  font-family: monospace;
+  opacity: 0.9;
+  width:35%;
+}
+
+mat-card-content {
+  margin-left:16px;
+}
+
+.header {
+  display: inline-block;
+  color:white;
+  font-family: monospace;
+}
+
+.snowflake {
+  margin-left: 10px;
+}
+
+.fancy-button {
+  position: relative;
+  color: #fff;
+  border: 1px solid;
+  margin: 25px;
+  padding: 10px 25px;
+  text-decoration: none;
+  display: inline-block;
+  outline: none;
+  line-height: 100%;
+  overflow: hidden;
+  height: 40px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.pomegranate {
+  background-color: #c0392b;
+}
+
+.pomegranate:hover {
+  color: #c0392b;
+  background-color: #fff;
+}
+
+.large {
+  padding: 20px 25px;
+  font-size: 1.25em;
+  height: 55px;
+}
+
+.rounded {
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+}
+
+.shadow {
+  -webkit-transition: all 0.35s ease;
+  -moz-transition: all 0.35s ease;
+  -o-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.shadow:hover {
+  -webkit-box-shadow: 0 .1em 1em;
+  -moz-box-shadow: 0 .1em 1em;
+  -o-box-shadow: 0 .1em 1em;
+  box-shadow: 0 .1em 1em;
+}
+
+.bounce {
+  -webkit-transition: all 0.35s ease;
+  -moz-transition: all 0.35s ease;
+  -o-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.bell {
+  -webkit-transition: all 0.35s ease;
+  -moz-transition: all 0.35s ease;
+  -o-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.bell:hover .icon {
+  -webkit-animation: bell 0.15s 6 linear alternate;
+  -moz-animation: bell 0.15s 6 linear alternate;
+  -o-animation: bell 0.15s 6 linear alternate;
+  animation: bell 0.15s 6 linear alternate;
+}
+
+.bounce:hover {
+  -webkit-animation: bounce 0.25s 2 linear alternate;
+  -moz-animation: bounce 0.25s 2 linear alternate;
+  -o-animation: bounce 0.25s 2 linear alternate;
+  animation: bounce 0.25s 2 linear alternate;
+}
+
+.infinite:hover {
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.infinite:hover .icon {
+-webkit-animation-iteration-count: infinite;
+-moz-animation-iteration-count: infinite;
+-o-animation-iteration-count: infinite;
+animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes bell {
+  from {
+    -webkit-transform: rotate(12deg);
+  }
+  to {
+    -webkit-transform: rotate(-12deg);
+  }
+}
+@-moz-keyframes bell {
+  from {
+    -moz-transform: rotate(12deg);
+  }
+  to {
+    -moz-transform: rotate(-12deg);
+  }
+}
+@-o-keyframes bell {
+  from {
+    -o-transform: rotate(12deg);
+  }
+  to {
+    -o-transform: rotate(-12deg);
+  }
+}
+@keyframes bell {
+  from {
+    transform: rotate(12deg);
+  }
+  to {
+    transform: rotate(-12deg);
+  }
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(3deg);
+  }
+  100% {
+    -webkit-transform: rotate(-3deg);
+  }
+}
+@-moz-keyframes bounce {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  50% {
+    -moz-transform: rotate(3deg);
+  }
+  100% {
+    -moz-transform: rotate(-3deg);
+  }
+}
+@-o-keyframes bounce {
+  0% {
+    -o-transform: rotate(0deg);
+  }
+  50% {
+    -o-transform: rotate(3deg);
+  }
+  100% {
+    -o-transform: rotate(-3deg);
+  }
+}
+@keyframes bounce {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(-3deg);
+  }
+}
+
+
+
+

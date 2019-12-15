@@ -1,0 +1,20 @@
+<div class="signbg">
+  <mat-card>
+    <form #SignUpForm="ngForm" (submit)="onSignUp(SignUpForm)">
+        <mat-form-field>
+            <input matInput ngModel name="empId" placeholder="Emp ID" #empIdInput="ngModel" maxlength="6" required>
+            <mat-error *ngIf="empIdInput.invalid">Please enter valid EmpID</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput ngModel name="name" placeholder="Name" #nameInput="ngModel" required >
+            <mat-error *ngIf="nameInput.invalid">Please enter valid Name</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+            <input type="password" matInput ngModel name="password" placeholder="Password" #passwordInput="ngModel" required>
+            <mat-error *ngIf="passwordInput.invalid">Please enter valid Password</mat-error>
+        </mat-form-field>
+        <button mat-button mat-stroked-button color="warn" type="submit">SignUp</button>
+    </form>
+  </mat-card>
+</div>
+

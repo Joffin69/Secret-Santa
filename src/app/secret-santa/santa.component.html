@@ -1,0 +1,33 @@
+<div class="bg">
+  <mat-progress-bar mode="query" *ngIf="!isLoading" color="warn"></mat-progress-bar>
+  <div *ngIf="!userHasAngel && userData && !userHasNoAngel" style="text-align: center" >
+    <!-- <button mat-button mat-raised-button (click)="getAngel()">GET YOUR ANGEL !</button> -->
+    <a class="fancy-button fontclass large rounded pomegranate bounce bell infinite" (click)="getAngel()">
+      GET YOUR ANGEL !
+      <span class="icon">
+        <i class="fa fa-snowflake-o snowflake"></i>
+      </span>
+    </a>
+  </div>
+
+  <mat-card *ngIf="userHasAngel && userData && !userHasNoAngel" class="example-card">
+    <mat-card-header>
+      <mat-card-title class="fontclass">Hello.... Santa... Merry Christmas !!!</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <h1 class="fontclass">Ta Daaaa..  !! Here is your Angel <i class="fa fa-smile-o" aria-hidden="true"></i></h1>
+      <h2 class="fontclass">Emp Id : {{userData.angelId}}</h2>
+      <h2 class="fontclass">Name   : {{userData.angel}}</h2>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card *ngIf="userHasNoAngel && userData" class="example-card">
+      <mat-card-header>
+        <mat-card-title class="fontclass">Hello.... Santa... Merry Christmas !!!</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <h1 class="fontclass">We are sorry .. We cud not find an Angel for you.. <i class="fa fa-frown-o" aria-hidden="true"></i></h1>
+      </mat-card-content>
+  </mat-card>
+
+</div>

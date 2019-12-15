@@ -1,0 +1,37 @@
+mat-toolbar {
+  background-color: red;
+}
+
+#logo {
+  background-image: url('../../images/secret-santa.png');
+  background-size: cover;
+  background-position: center;
+  height:59px;
+  width:73px;
+  margin-right: 10px;
+  opacity: 0.9;
+}
+
+.fontclass {
+  font-family: 'Solway', serif !important;
+}
+
+mat-toolbar span {
+  color: white;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  list-style: none;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}

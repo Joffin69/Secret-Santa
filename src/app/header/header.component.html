@@ -1,0 +1,20 @@
+<mat-toolbar class="mat-elevation-z6 fontclass" >
+  <span id="logo">
+  </span>
+  <span>Secret-Santa</span>
+  <span class="spacer"></span>
+  <ul>
+    <li *ngIf="isUserAuthd">
+        <a routerLink="santa" mat-button class="fontclass">Secret Santa</a>
+    </li>
+    <li *ngIf="!isUserAuthd">
+      <a routerLink="" mat-button class="fontclass">Login</a>
+    </li>
+    <li *ngIf="!isUserAuthd">
+        <a routerLink="signup" mat-button class="fontclass">SignUp</a>
+    </li>
+    <li *ngIf="isUserAuthd">
+      <button mat-button type="button" class="fontclass" (click)="onLogout()">LogOut</button>
+  </li>
+  </ul>
+</mat-toolbar>
